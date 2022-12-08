@@ -11,11 +11,26 @@ class person:
     def hello(self):
         print("Hello World")
 
-kalyn = person("kalyn", 17)
+class student(person):
+    role = 'student'
+
+class teacher(person):
+    role = 'teacher'
+
+    def hi(self):
+        print("Hi my name is Mx." + self.name)
+
+
+forlenza = teacher("forlenza", 184)
+print(forlenza.role)
+
+forlenza.hi()
+
+kalyn = student("kalyn", 17)
 print(kalyn.name)
 print(kalyn.age)
 
-ansu = person("ansu", 17)
+ansu = student("ansu", 17)
 print(ansu.name)
 print(ansu.age)
 
